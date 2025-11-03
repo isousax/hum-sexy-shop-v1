@@ -1,0 +1,68 @@
+import type { Category } from '@/types';
+
+export const categories: Category[] = [
+  {
+    id: 'cat-1',
+    name: 'Iniciantes',
+    slug: 'iniciantes',
+    description: 'Produtos perfeitos para quem está começando a explorar',
+    icon: 'Sparkles',
+    order: 1,
+  },
+  {
+    id: 'cat-2',
+    name: 'Para Casais',
+    slug: 'casais',
+    description: 'Experiências compartilhadas e momentos especiais a dois',
+    icon: 'Heart',
+    order: 2,
+  },
+  {
+    id: 'cat-3',
+    name: 'Prazer Solo',
+    slug: 'solo',
+    description: 'Descubra o autoconhecimento e o autocuidado',
+    icon: 'User',
+    order: 3,
+  },
+  {
+    id: 'cat-4',
+    name: 'Vibradores',
+    slug: 'vibradores',
+    description: 'Diferentes intensidades e formatos para todos os gostos',
+    icon: 'Zap',
+    order: 4,
+  },
+  {
+    id: 'cat-5',
+    name: 'Cosméticos',
+    slug: 'cosmeticos',
+    description: 'Lubrificantes, óleos e produtos para massagem',
+    icon: 'Droplet',
+    order: 5,
+  },
+  {
+    id: 'cat-6',
+    name: 'Lingerie',
+    slug: 'lingerie',
+    description: 'Peças sensuais e confortáveis para todos os corpos',
+    icon: 'Shirt',
+    order: 6,
+  },
+  {
+    id: 'cat-7',
+    name: 'Acessórios',
+    slug: 'acessorios',
+    description: 'Vendas, algemas e outros itens para incrementar',
+    icon: 'Gift',
+    order: 7,
+  },
+  {
+    id: 'cat-8',
+    name: 'Wellness',
+    slug: 'wellness',
+    description: 'Produtos para saúde íntima e bem-estar',
+    icon: 'Leaf',
+    order: 8,
+  },
+];
