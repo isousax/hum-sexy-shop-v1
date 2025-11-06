@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ShieldCheck } from 'lucide-react';
 import { useAgeGate } from '@/contexts/AgeGateContext';
@@ -7,6 +7,17 @@ import { Button } from './Button';
 export function AgeGate() {
   const { isVerified, verify } = useAgeGate();
   const [isExiting, setIsExiting] = useState(false);
+
+  useEffect(() => {
+    if (!isVerified) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isVerified]);
 
   if (isVerified) return null;
 

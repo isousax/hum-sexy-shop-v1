@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // ← Adicionei useNavigate
+import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Shield, Truck, Heart, Star, Zap } from 'lucide-react';
 import { productsApi } from '@/services/api';
@@ -32,21 +32,21 @@ export default function HomePage() {
     {
       title: 'Para Iniciantes',
       description: 'Produtos suaves e acolhedores para começar sua jornada',
-      image: 'https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=800',
+      image: 'collections/iniciantes.jpg',
       link: '/collections/iniciantes',
       color: 'from-pink-500 to-purple-500',
     },
     {
       title: 'Casais',
       description: 'Experiências compartilhadas para momentos especiais',
-      image: 'https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?w=800',
+      image: 'collections/casais.jpg',
       link: '/collections/casais',
       color: 'from-red-500 to-pink-500',
     },
     {
       title: 'Prazer Solo',
       description: 'Autoconhecimento e autocuidado em primeiro lugar',
-      image: 'https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=800',
+      image: 'collections/solo.jpg',
       link: '/collections/solo',
       color: 'from-purple-500 to-indigo-500',
     },
@@ -63,7 +63,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden bg-gradient-to-br from-background via-background-subtle to-background min-h-[600px] flex items-center">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1920')] bg-cover bg-center opacity-5" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-18 relative z-10">
           <div className="max-w-3xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}

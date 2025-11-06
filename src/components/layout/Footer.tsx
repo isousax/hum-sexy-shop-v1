@@ -103,7 +103,7 @@ export function Footer() {
 
         {/* Trust Badges */}
         <div className="border-t border-neutral-800 pt-8 mb-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-around">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 place-content-evenly">
             <div className="flex items-center gap-3 text-neutral-400">
               <Shield className="w-8 h-8 text-brand-400 flex-shrink-0" />
               <div>

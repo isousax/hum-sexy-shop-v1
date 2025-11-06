@@ -16,15 +16,14 @@ export default function ShippingReturnsPage() {
             
             <div className="space-y-4 text-neutral-300">
               <p>
-                <strong className="text-neutral-100">Prazo de Entrega:</strong> 5 a 15 dias úteis 
-                para todo o Brasil, dependendo da região.
+                <strong className="text-neutral-100">Prazo de Entrega:</strong> até 3 horas
+                para Regiões Metropolinas do Recife (dependendo da região).
               </p>
               <p>
-                <strong className="text-neutral-100">Frete Grátis:</strong> Para compras acima de R$ 200,00.
+                <strong className="text-neutral-100">Frete Grátis:</strong> Para compras acima de R$ 299,00.
               </p>
               <p>
-                <strong className="text-neutral-100">Rastreamento:</strong> Você receberá o código 
-                de rastreamento por email assim que o pedido for postado.
+                <strong className="text-neutral-100">Rastreamento:</strong> Você será notificado por whatsapp quando sua encomenda for despachada.
               </p>
             </div>
           </section>
@@ -40,9 +39,6 @@ export default function ShippingReturnsPage() {
               <p>
                 Todos os produtos são enviados em caixas ou envelopes <strong className="text-neutral-100">
                 totalmente neutros</strong>, sem qualquer identificação externa do conteúdo ou da loja.
-              </p>
-              <p>
-                A nota fiscal vem em envelope separado dentro da embalagem, garantindo sua privacidade total.
               </p>
             </div>
           </section>
@@ -63,7 +59,6 @@ export default function ShippingReturnsPage() {
                 <li>O produto esteja <strong className="text-neutral-100">lacrado</strong></li>
                 <li>Sem sinais de uso ou violação da embalagem</li>
                 <li>Na embalagem original</li>
-                <li>Com nota fiscal</li>
               </ul>
               <p className="text-sm italic">
                 * Por questões de higiene e segurança, produtos abertos não podem ser trocados ou devolvidos.

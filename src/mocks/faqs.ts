@@ -4,14 +4,14 @@ export const faqs: FAQ[] = [
   {
     id: 'faq-1',
     question: 'A embalagem é realmente discreta?',
-    answer: 'Sim! Todos os produtos são enviados em caixas neutras, sem qualquer identificação externa do conteúdo ou da loja. A nota fiscal vem em envelope separado dentro da embalagem.',
+    answer: 'Sim! Todos os produtos são enviados em caixas neutras, sem qualquer identificação externa do conteúdo ou da loja.',
     category: 'Envio',
     order: 1,
   },
   {
     id: 'faq-2',
     question: 'Qual o prazo de entrega?',
-    answer: 'O prazo varia de acordo com sua região. Geralmente entre 5 a 15 dias úteis para todo o Brasil. Você receberá o código de rastreamento assim que o pedido for postado.',
+    answer: 'O prazo varia de acordo com sua região. Geralmente entre 2 a 3 horas. Você será notificado pelo whatsapp assim que seu pedido for despachado.',
     category: 'Envio',
     order: 2,
   },
