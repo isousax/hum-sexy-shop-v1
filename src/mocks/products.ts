@@ -10,7 +10,6 @@ export const products: Product[] = [
     shortDescription: 'Calcinha em renda e tule com detalhe em fita de cetim',
     price: 6.5,
     originalPrice: 9.9,
-    discount: 34,
     images: [
       {
         id: 'img-101-1',
@@ -75,7 +74,6 @@ export const products: Product[] = [
       'Sabonete íntimo 200ml — controla o pH, hidrata e perfuma com cheiro de morango',
     price: 9.99,
     originalPrice: 14.99,
-    discount: 33,
     images: [
       {
         id: 'img-201-1',
@@ -142,7 +140,6 @@ export const products: Product[] = [
     shortDescription: 'Body rendado em renda e tule com amarração em cetim',
     price: 44.99,
     originalPrice: 69.9,
-    discount: 35.6,
     images: [
       {
         id: 'img-301-1',
@@ -222,7 +219,6 @@ export const products: Product[] = [
     shortDescription: 'Kit com 7 tangas confortáveis em microfibra (forro algodão)',
     price: 29.9,
     originalPrice: 49.9,
-    discount: 40,
     images: [
       {
         id: 'img-102-1',
@@ -281,7 +277,6 @@ export const products: Product[] = [
     shortDescription: 'Kit com 10 calcinhas em microfibra (92% poliéster, 8% elastano)',
     price: 49.9,
     originalPrice: 79.9,
-    discount: 38,
     images: [
       {
         id: 'img-103-1',
@@ -386,7 +381,6 @@ export const products: Product[] = [
     shortDescription: 'Vibrador recarregável USB com 12 modos',
     price: 249.9,
     originalPrice: 349.9,
-    discount: 29,
     images: [
       {
         id: 'img-3-1',

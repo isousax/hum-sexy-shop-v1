@@ -6,7 +6,7 @@ import { productsApi, reviewsApi } from '@/services/api';
 import type { Product, Review } from '@/types';
 import { formatCurrency } from '@/lib/utils';
 import { useCart } from '@/contexts/CartContext';
-import { useToast } from '@/contexts/ToastContext';
+import { useToast } from '@/hooks/useToast';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
 
@@ -45,6 +45,7 @@ export default function ProductPage() {
       type: 'success',
       title: 'Adicionado ao carrinho',
       message: `${quantity}x ${product.name}`,
+      groupKey: 'add-to-cart', // Agrupa todos os toasts de adicionar ao carrinho
     });
   };
 

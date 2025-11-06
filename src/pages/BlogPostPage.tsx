@@ -5,7 +5,7 @@ import { Clock, ArrowLeft, Calendar, Tag, Share2 } from 'lucide-react';
 import { blogApi } from '@/services/api';
 import type { BlogPost } from '@/types';
 import { Button } from '@/components/ui/Button';
-import { useToast } from '@/contexts/ToastContext';
+import { useToast } from '@/hooks/useToast';
 
 export default function BlogPostPage() {
   const { slug } = useParams<{ slug: string }>();

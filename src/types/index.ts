@@ -9,7 +9,7 @@ export interface Product {
   shortDescription: string;
   price: number;
   originalPrice?: number;
-  discount?: number;
+  // discount is calculated automatically based on price and originalPrice
   images: ProductImage[];
   video?: string;
   category: Category;

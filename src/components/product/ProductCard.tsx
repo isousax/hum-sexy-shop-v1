@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ShoppingCart, Star } from 'lucide-react';
 import type { Product } from '@/types';
-import { formatCurrency } from '@/lib/utils';
+import { formatCurrency, calculateDiscount } from '@/lib/utils';
 import { useCart } from '@/contexts/CartContext';
-import { useToast } from '@/contexts/ToastContext';
+import { useToast } from '@/hooks/useToast';
 import { Badge } from '../ui/Badge';
 import { Button } from '../ui/Button';
 
@@ -14,9 +14,7 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps) {
   const { addItem } = useCart();
-  const { showToast } = useToast();
-
-  const handleAddToCart = (e: React.MouseEvent) => {
+  const { showToast } = useToast();  const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
     addItem(product);
@@ -24,12 +22,11 @@ export function ProductCard({ product }: ProductCardProps) {
       type: 'success',
       title: 'Adicionado ao carrinho',
       message: `${product.name} foi adicionado ao seu carrinho`,
+      groupKey: 'add-to-cart', // Agrupa todos os toasts de adicionar ao carrinho
     });
   };
 
-  const discount = product.originalPrice
-    ? Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)
-    : 0;
+  const discount = calculateDiscount(product.price, product.originalPrice);
 
   return (
     <motion.div

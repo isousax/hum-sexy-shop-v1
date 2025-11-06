@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, CheckCircle, AlertCircle, Info, AlertTriangle } from 'lucide-react';
-import { useToast, type Toast } from '@/contexts/ToastContext';
+import { useToast } from '@/hooks/useToast';
+import type { Toast } from '@/types/toast';
 import { cn } from '@/lib/utils';
 
 const icons = {
@@ -21,6 +22,11 @@ function ToastItem({ toast }: { toast: Toast }) {
   const { removeToast } = useToast();
   const Icon = icons[toast.type];
 
+  // Formata a mensagem com contador se houver
+  const displayMessage = toast.count && toast.count > 1 
+    ? `${toast.count} itens adicionados ao carrinho`
+    : toast.message;
+
   return (
     <motion.div
       layout
@@ -39,9 +45,21 @@ function ToastItem({ toast }: { toast: Toast }) {
             <Icon className="h-5 w-5" aria-hidden="true" />
           </div>
           <div className="ml-3 flex-1">
-            <p className="text-sm font-medium">{toast.title}</p>
-            {toast.message && (
-              <p className="mt-1 text-sm opacity-90">{toast.message}</p>
+            <div className="flex items-center gap-2">
+              <p className="text-sm font-medium">{toast.title}</p>
+              {toast.count && toast.count > 1 && (
+                <motion.span
+                  key={toast.count}
+                  initial={{ scale: 1.5 }}
+                  animate={{ scale: 1 }}
+                  className="inline-flex items-center justify-center min-w-[1.5rem] h-6 px-2 rounded-full bg-white/20 text-xs font-bold"
+                >
+                  {toast.count}
+                </motion.span>
+              )}
+            </div>
+            {displayMessage && (
+              <p className="mt-1 text-sm opacity-90">{displayMessage}</p>
             )}
           </div>
           <div className="ml-4 flex flex-shrink-0">

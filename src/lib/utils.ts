@@ -19,6 +19,17 @@ export function formatCurrency(value: number): string {
 }
 
 /**
+ * Calculate discount percentage based on original and current price
+ * Returns 0 if no original price is provided
+ */
+export function calculateDiscount(price: number, originalPrice?: number): number {
+  if (!originalPrice || originalPrice <= price) {
+    return 0;
+  }
+  return Math.round(((originalPrice - price) / originalPrice) * 100);
+}
+
+/**
  * Format date to Brazilian format
  */
 export function formatDate(date: string | Date): string {
@@ -46,13 +57,6 @@ export function formatPhone(phone: string): string {
     return cleaned.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
   }
   return cleaned.replace(/^(\d{2})(\d{4})(\d{4})$/, '($1) $2-$3');
-}
-
-/**
- * Calculate discount percentage
- */
-export function calculateDiscount(originalPrice: number, currentPrice: number): number {
-  return Math.round(((originalPrice - currentPrice) / originalPrice) * 100);
 }
 
 /**
