@@ -271,7 +271,7 @@ export const shippingApi = {
           name: hasFreeShipping ? 'Frete Grátis' : 'Entrega Padrão',
           description: hasFreeShipping 
             ? `${cepInfo.localidade} - Compras acima de R$ 299,00`
-            : `${cepInfo.localidade} - ${distance.toFixed(1)} km`,
+            : `${cepInfo.localidade} - ${distance.toFixed(2)} km`,
           price: shippingPrice,
           estimatedDays: distance < 10 
             ? shippingConfig.deliveryDays.min 

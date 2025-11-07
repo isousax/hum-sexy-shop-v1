@@ -9,5 +9,5 @@ export const EMOJIS = {
   CITY: String.fromCodePoint(0x1F3D6),      // 🌆
   NOTES: String.fromCodePoint(0x1F4DD),     // 📝
   LOCK: String.fromCodePoint(0x1F512),      // 🔒
-  SEP: '-------------' // Separator
+  SEP: '-------------'
 };

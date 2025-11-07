@@ -122,7 +122,7 @@ export default function ProductPage() {
             {/* Features */}
             <div className="flex flex-wrap gap-2 mb-6">
               {product.features.map((feature, idx) => (
-                <Badge key={idx} variant="brand">
+                <Badge key={idx} variant="brand" size="sm">
                   {feature.label}
                 </Badge>
               ))}

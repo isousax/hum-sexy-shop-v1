@@ -57,7 +57,7 @@ export default function CollectionsPage() {
           <p className="text-neutral-400">
             {viewMode === 'categories' 
               ? 'Explore nossa seleção completa de categorias' 
-              : `${filteredProducts.length} produtos disponíveis`}
+              : `${filteredProducts.length} produtos encontrados`}
           </p>
         </div>
 

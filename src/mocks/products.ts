@@ -177,7 +177,7 @@ export const products: Product[] = [
       order: 2,
     },
     subcategory: 'Bodies',
-    tags: ['bestseller','renda', 'tule', 'sensual', 'amarracao', 'forro-algodao'],
+    tags: ['bestseller', 'renda', 'tule', 'sensual', 'amarracao', 'forro-algodao'],
     inStock: true,
     stockQuantity: 80,
     sku: 'BODY-REN-001',
@@ -204,12 +204,69 @@ export const products: Product[] = [
     createdAt: '2025-11-03T16:00:00Z',
     updatedAt: '2025-11-03T16:00:00Z',
   },
-
-
-
-
-
-
+  {
+    id: 'prod-501',
+    name: 'Vibrador Bullet com Fio',
+    slug: 'vibrador-bullet-com-fio',
+    description:
+      'Vibrador tipo cápsula com fio, indicado para estimular seios, mamilos, clítoris, períneo, ao redor do ânus e outras áreas erógenas. Possui botão giratório para controle de velocidade. Recomendado o uso de lubrificante. Higienizar antes e após o uso.',
+    shortDescription: 'Bullet com fio e controle giratório — para estímulos locais',
+    price: 11.99,
+    images: [
+      {
+        id: 'img-501-1',
+        url: 'https://pub-d777298c0a594f1fa9623833c9805aea.r2.dev/produtos/vibradores/img-501-1.jpg',
+        alt: 'Vibrador Bullet com fio - vista lateral',
+        isPrimary: true,
+        order: 1,
+      },
+      {
+        id: 'img-501-2',
+        url: 'https://pub-d777298c0a594f1fa9623833c9805aea.r2.dev/produtos/vibradores/img-501-2.jpg',
+        alt: 'Vibrador Bullet - detalhe do botão giratório',
+        isPrimary: false,
+        order: 2,
+      },
+    ],
+    category: {
+      id: 'cat-sex-toys',
+      name: 'VIBRADORES',
+      slug: 'vibradores',
+      order: 5,
+    },
+    subcategory: 'Vibradores',
+    tags: ['bullet', 'com-fio', 'clitóris', 'preliminares', 'lubrificante-recomendado'],
+    inStock: true,
+    stockQuantity: 75,
+    sku: 'VIB-BULL-FIO-001',
+    rating: 4.6,
+    reviewCount: 82,
+    specifications: [
+      {
+        label: 'Aplicações',
+        value: 'Seios, mamilos, clítoris, períneo, ao redor do ânus e outras áreas erógenas',
+      },
+      { label: 'Controle', value: 'Botão giratório (controle de velocidade)' },
+      { label: 'Cores', value: 'Consultar cores após finalização da compra' },
+      {
+        label: 'Recomendações',
+        value: 'Uso de lubrificante recomendado; não usar em áreas inflamadas ou com lacerações',
+      },
+      { label: 'Limpeza', value: 'Higienizar com água e sabão neutro antes e após o uso' },
+    ],
+    materials: ['ABS (plástico) - superfície lisa', 'Componentes elétricos internos'],
+    features: [
+      { icon: 'Bolt', label: 'Controle manual', value: 'Botão giratório' },
+      { icon: 'Sparkles', label: 'Uso versátil', value: true },
+      { icon: 'Info', label: 'Consultar cores', value: true },
+    ],
+    cleaningInstructions:
+      "Higienize antes e depois do uso com água e sabão neutro. Seque e guarde em local seco. Não submergir em água se não for indicado como à prova d'água.",
+    warranty: '90 dias contra defeitos de fabricação',
+    createdAt: '2025-11-07T12:00:00Z',
+    updatedAt: '2025-11-07T12:00:00Z',
+  },
+  //================================//
   {
     id: 'prod-102',
     name: 'Kit 7 Tangas - Promoção',

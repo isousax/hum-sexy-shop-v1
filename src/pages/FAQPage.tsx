@@ -30,19 +30,16 @@ export default function FAQPage() {
     : [{ category: activeCategory, faqs: filteredFaqs }];
 
   return (
-    <div className="min-h-screen py-12">
+    <div className="min-h-screen py-8 sm:py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Aprimorado */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-brand-400/10 rounded-full mb-4">
             <HelpCircle className="w-8 h-8 text-brand-400" />
           </div>
-          <h1 className="text-4xl font-bold text-neutral-100 mb-4 bg-gradient-to-r from-neutral-100 to-neutral-300 bg-clip-text text-transparent">
+          <h1 className="text-3xl font-bold text-neutral-100 mb-4 bg-gradient-to-r from-neutral-100 to-neutral-300 bg-clip-text text-transparent">
             Perguntas Frequentes
           </h1>
-          <p className="text-lg text-neutral-400 max-w-2xl mx-auto">
-            Encontre respostas para as dúvidas mais comuns sobre nossos produtos, entregas e privacidade
-          </p>
         </div>
 
         {/* Barra de Pesquisa */}
@@ -198,11 +195,11 @@ export default function FAQPage() {
             Ainda com dúvidas?
           </h3>
           <p className="text-neutral-400 mb-6 max-w-2xl mx-auto">
-            Nossa equipe está sempre pronta para ajudar você com qualquer dúvida sobre produtos, pedidos ou privacidade.
+            Estamos aqui para ajudar você!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="border border-neutral-700 text-neutral-300 px-8 py-3 rounded-lg font-semibold hover:bg-neutral-800 hover:border-neutral-600 transition-colors">
-              Ver Contato
+              <a href="https://wa.me/558186163513?text=Olá, pode me tirar uma dúvida?" target="_blank" rel="noopener noreferrer">Atendimento</a>
             </button>
           </div>
         </motion.div>

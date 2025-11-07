@@ -110,7 +110,7 @@ export function Header() {
                 className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-brand-400 to-accent-500 bg-clip-text text-transparent"
                 whileHover={{ scale: 1.05 }}
               >
-                huum<span className="text-brand-500">sex</span>shop
+                <img src="logomarca.png" alt="Logo" className='h-10 w-20' />
               </motion.div>
             </Link>
 
