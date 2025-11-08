@@ -30,7 +30,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-bold bg-gradient-to-r from-brand-400 to-accent-500 bg-clip-text text-transparent mb-4">
-              <img src="logomarca.png" alt="Logo" className='h-10 w-20' />
+              <img src="/logomarca.png" alt="Logo" className='h-10 w-20' />
             </h3>
             <p className="text-neutral-400 text-sm mb-4">
               Sua loja de confiança para produtos íntimos de qualidade. Discrição e privacidade garantidas.

@@ -113,13 +113,6 @@ export default function HomePage() {
                     <ArrowRight className="w-5 h-5" />
                   </motion.div>
                 </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  onClick={() => handleNavigation('/collections/iniciantes')}
-                >
-                  Guia para Iniciantes
-                </Button>
               </div>
 
               {/* Stats rápidas */}

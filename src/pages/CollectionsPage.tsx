@@ -73,7 +73,7 @@ export default function CollectionsPage() {
               }`}
             >
               <Grid3x3 className="w-4 h-4" />
-              Ver Produtos
+              Produtos
             </button>
             <button
               onClick={() => setViewMode('categories')}
@@ -84,7 +84,7 @@ export default function CollectionsPage() {
               }`}
             >
               <LayoutGrid className="w-4 h-4" />
-              Ver Categorias
+              Categorias
             </button>
           </div>
         </div>

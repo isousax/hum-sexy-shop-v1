@@ -60,7 +60,7 @@ export function Badge({
           {icon}
         </span>
       )}
-      <span className="whitespace-nowrap truncate max-w-[80px] sm:max-w-none">
+      <span className="whitespace-nowrap truncate max-w-none">
         {children}
       </span>
     </motion.span>
